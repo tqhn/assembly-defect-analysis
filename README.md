@@ -39,8 +39,6 @@ ORDER BY high_severity_count DESC;
 
 
 
----
-
 ### ✅ Step 6: Key Insights (Your Takeaways)
 
 ```markdown
