@@ -43,8 +43,6 @@ ORDER BY high_severity_count DESC;
 
 ### ✅ Step 6: Key Insights (Your Takeaways)
 
-Summarize what the data told you — this is where you flex your quality manager perspective.
-
 ```markdown
 ## 📈 Key Insights
 
