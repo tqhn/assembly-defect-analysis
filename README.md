@@ -51,36 +51,28 @@ Three CSV files simulate data from a quality management system:
 
 Below are some of the key SQL queries used to analyze the dataset:
 
-### 1. Identify the most frequent defect types
-
 ```sql
+-- 1. Identify the most frequent defect types
 SELECT defect_type, COUNT(*) AS defect_count
 FROM quality_inspections
 GROUP BY defect_type
 ORDER BY defect_count DESC;
 
-### 2. Count high-severity defects by shift
-
-```sql
+-- 2. Count high-severity defects by shift
 SELECT shift, COUNT(*) AS high_severity_count
 FROM quality_inspections
 WHERE severity = 'High'
 GROUP BY shift
 ORDER BY high_severity_count DESC;
 
-### 3. Rework trends over time
-
-```sql
+-- 3. Rework trends over time
 SELECT strftime('%Y-%m', inspection_date) AS month, COUNT(*) AS rework_count
 FROM quality_inspections
 WHERE rework_required = 1
 GROUP BY month
 ORDER BY month DESC;
 
-
-### 4. Supplier contribution to defects
-
-```sql
+-- 4. Supplier contribution to defects
 SELECT suppliers.supplier_name, COUNT(*) AS defects_by_supplier
 FROM quality_inspections
 JOIN parts ON quality_inspections.part_id = parts.part_id
@@ -88,3 +80,4 @@ JOIN suppliers ON parts.supplier_id = suppliers.supplier_id
 WHERE quality_inspections.rework_required = 1
 GROUP BY suppliers.supplier_name
 ORDER BY defects_by_supplier DESC;
+
