@@ -1,0 +1,7 @@
+inspection_id,date,part_id,defect_type,severity,inspector,shift,rework_required
+1001,2025-02-01,P001,Misalignment,High,John,A,Yes
+1002,2025-02-03,P002,Crack,Medium,Alice,B,No
+1003,2025-03-10,P001,Misalignment,High,John,A,Yes
+1004,2025-03-15,P003,Scratch,Low,Mike,C,No
+1005,2025-04-01,P004,Warping,High,Alice,B,Yes
+1006,2025-04-03,P001,Misalignment,High,John,A,Yes

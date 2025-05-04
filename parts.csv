@@ -1,0 +1,5 @@
+part_id,part_name,supplier_id,category
+P001,Gear Housing,S001,Assembly
+P002,Axle,S002,Mechanical
+P003,Outer Casing,S001,Assembly
+P004,Connector,S003,Electrical
